@@ -1,0 +1,102 @@
+#page-landing {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-text-in-primary);
+}
+
+#page-landing-content {
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo-container {
+  width: 100vw;
+  background: var(--color-primary);
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+.logo-container-col-1 {
+  margin-bottom: 5rem;
+}
+
+.logo-container-col-1 img {
+  height: 10rem;
+}
+
+.hero-image {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.logo-container h2 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 4.6rem;
+  margin-top: 0.8rem;
+}
+
+.text-container {
+  padding: 0 2rem;
+}
+
+.text-container h3 {
+  font-weight: 500;
+  font-size: 2.8rem;
+  color: var(--color-primary);
+}
+
+.text-container p {
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-base);
+  font-size: 1.5rem;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 3.2rem;
+}
+.buttons-container a {
+  width: 20rem;
+  height: 10rem;
+  border-radius: 0.8rem;
+  font: 700 2rem Archivo;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: var(--color-button-text);
+
+  transition: background-color 0.2s;
+}
+
+.buttons-container a.login {
+  background: var(--color-primary-lighter);
+}
+
+.buttons-container a.register {
+  background: var(--color-secondary);
+}
+
+.buttons-container a.login:hover {
+  background-color: var(--color-primary-light);
+}
+
+.buttons-container a.register:hover {
+  background-color: var(--color-secondary-dark);
+}
