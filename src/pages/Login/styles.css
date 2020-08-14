@@ -74,6 +74,17 @@ button {
 #login-page-form input[type="password"] {
   border-radius: 0 0 0.8rem 0.8rem;
 }
+/* .position-eyeicon input {
+  position: absolute;
+}
+.eyeIcon {
+  position: relative;
+  width: 3rem;
+  left: auto;
+  right: 80px;
+  text-indent: 32px;
+  top: 510px;
+} */
 
 .checkbox-input-flex {
   margin-bottom: 3rem;
@@ -83,16 +94,21 @@ button {
   justify-content: space-between;
 }
 
-.checkbox-input-flex input[type="checkbox"] {
+li input[type="checkbox"] {
   width: 2rem;
   height: 2rem;
 }
 
-.label-flex {
+ul {
+  list-style-type: none;
+}
+
+li {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 #login-page-form main label {
   color: var(--color-text-complement);
   margin-left: 1rem;
@@ -139,7 +155,8 @@ footer {
 }
 
 #login-page-form footer a {
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-primary-light);
   font-weight: 600;
   font-size: 1.6rem;
   color: var(--color-primary-light);

@@ -2,6 +2,8 @@ import React from "react";
 
 import logoImg from "../../assets/images/logo.svg";
 import heartpurpleIcon from "../../assets/images/icons/purple-heart.svg";
+// import eyeIcon from "../../assets/images/icons/eye.svg";
+
 import "./styles.css";
 
 function Login() {
@@ -25,15 +27,22 @@ function Login() {
               name="password"
               placeholder="Password"
               type="password"
-              className="login-inputs"
+              className="login-inputs position-eyeicon"
             />
+            {/* <img src={eyeIcon} alt="Show password" className="eyeIcon" /> */}
           </fieldset>
           <fieldset>
             <div className="checkbox-input-flex">
-              <div className="label-flex">
-                <input name="remember-me" label="Remember Me" type="checkbox" />
-                <label htmlFor="remember-me"> Remember me</label>
-              </div>
+              <ul>
+                <li>
+                  <input
+                    name="remember-me"
+                    label="Remember Me"
+                    type="checkbox"
+                  />
+                  <label htmlFor="remember-me"> Remember me</label>
+                </li>
+              </ul>
               <a href="/">Forgot password</a>
             </div>
           </fieldset>
@@ -42,7 +51,7 @@ function Login() {
         <footer className="footer-flex">
           <div className="register">
             <p>Don't have an account?</p>
-            <a href="/regsiter">Register</a>
+            <a href="/register">Register</a>
           </div>
           <span>
             It's free <img src={heartpurpleIcon} alt="heart purple" />
